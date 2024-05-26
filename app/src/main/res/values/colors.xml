@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="textButtonDelete">#F60505</color>
+    <color name="textBottomSheet">#0339FF</color>
+    <color name="backgroundEventItem">#D0EDD8</color>
+    <color name="textStatatus">#2B2820</color>
+    <color name="textInputFields">#3772E7</color>
+    <color name="floatingButtonColor">#67C0EA</color>
+</resources>

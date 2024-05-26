@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Event Planner</string>
+    <string name="add_new_event_item">Add new shop item</string>
+    <string name="item">item</string>
+    <string name="failed_to_retrieve_temperature">Failed to retrieve temperature</string>
+    <string name="error_occurred">Error occurred</string>
+    <string name="visited">Посещено</string>
+    <string name="skipped">Пропущено</string>
+    <string name="delete">Удалить</string>
+    <string name="name_of_the_event">Название мероприятия</string>
+    <string name="date">Дата</string>
+    <string name="search">Поиск</string>
+    <string name="city">Город</string>
+    <string name="location">Место проведения</string>
+    <string name="descriptions">Описание</string>
+    <string name="mask">гггг-мм-дд</string>
+</resources>
