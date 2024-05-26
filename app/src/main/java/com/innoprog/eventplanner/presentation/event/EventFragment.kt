@@ -76,9 +76,18 @@ class EventFragment : Fragment(), WeatherViewHolder.ClickListener {
         }
 
         initButton()
+
+        binding.textInputDate.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                val isDateFilled = !s.isNullOrBlank()
+               binding.buttonSearch.isEnabled = isDateFilled
+            }
+
+            override fun afterTextChanged(s: Editable?) {}
+        })
     }
-
-
 
     private fun launchAddMode() {
         binding.saveBtn.setOnClickListener {
@@ -95,7 +104,6 @@ class EventFragment : Fragment(), WeatherViewHolder.ClickListener {
             navigateUp()
         }
     }
-    
 
     private fun navigateUp() {
         findNavController().navigateUp()
@@ -199,7 +207,6 @@ class EventFragment : Fragment(), WeatherViewHolder.ClickListener {
         binding.locations.visibility = View.GONE
 
     }
-
 
     override fun onDestroy() {
         super.onDestroy()
