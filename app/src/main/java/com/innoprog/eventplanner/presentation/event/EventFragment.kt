@@ -21,7 +21,6 @@ import com.innoprog.eventplanner.presentation.weather.WeatherAdapter
 import com.innoprog.eventplanner.presentation.weather.WeatherViewHolder
 import com.innoprog.eventplanner.presentation.weather.state.ForecastState
 import com.innoprog.eventplanner.presentation.weather.state.LocationState
-import java.util.Calendar
 import javax.inject.Inject
 
 
@@ -77,12 +76,16 @@ class EventFragment : Fragment(), WeatherViewHolder.ClickListener {
 
         initButton()
 
+        checkingForTextInput()
+    }
+
+    private fun checkingForTextInput() {
         binding.textInputDate.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
 
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
                 val isDateFilled = !s.isNullOrBlank()
-               binding.buttonSearch.isEnabled = isDateFilled
+                binding.buttonSearch.isEnabled = isDateFilled
             }
 
             override fun afterTextChanged(s: Editable?) {}
