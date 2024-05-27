@@ -1,6 +1,8 @@
 # Проект для планирования мероприятий "Event Planner"
 
 # Техническое задание
+- Токен находиться в папке local.propertis
+- token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9mbnctdXMuZm9yZWNhLmNvbVwvYXV0aG9yaXplXC90b2tlbiIsImlhdCI6MTcxNjQwMjQzNSwiZXhwIjo5OTk5OTk5OTk5LCJuYmYiOjE3MTY0MDI0MzUsImp0aSI6ImNhMGE1Y2ZlOThhODgzOTkiLCJzdWIiOiJsdW1lbmZhbjkxIiwiZm10IjoiWERjT2hqQzQwK0FMamxZVHRqYk9pQT09In0.6N__B6YbN6Zltbr4rGUnjE64ExmRqDXIb-aU5QYwJ8M
 
 Проект представляет собой небольшое приложение для составления списка мероприятий,
 использующее [Foreca API]). Приложение предоставляет следующую функциональность:
